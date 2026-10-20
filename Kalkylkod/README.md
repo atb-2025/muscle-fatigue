@@ -152,6 +152,8 @@ och ökande amplitud. Byt tillbaka till kortets IP och gain efteråt.
 
 Hela anslutningsguiden finns också under **Koppla ESP32** i webbsidan.
 
+Öppna filen 'esp32_emg.io' i Arduino IDE eller PlatformIO.
+
 I Arduino IDE installerar du **esp32 by Espressif Systems**, stabil version 3.3.5
 eller senare. Vid behov lägg till följande i Additional Boards Manager URLs:
 
