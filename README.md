@@ -94,10 +94,20 @@ This implementation is designed as a prototype and engineering tool, not as a cl
 - 3x EKG or surfare EMG electrodes
 - Wires
 
+### Build the Circuit
+
+Build the circuit shown in the 'schematic_sEMG.webp' file. 
+Troubleshoot the circuit as you build it to make sure that everything works.
+
 ### Install dependencies
 
+* Download the all the files from the 'Kalkylkod' folder.
+
+* Open the folder in VSCode.
+
+* Open a new terminal and enter the following command separately: 
+
 ```bash
-cd Kalkylkod
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
@@ -114,6 +124,36 @@ Then open:
 ```text
 http://127.0.0.1:8000
 ```
+
+### ESP32 setup
+
+* Intall ArduinoIDE from the web.
+
+* Copy the code from the file 'esp32_emg.io' under the 'Kalkylkod' folder and paste it in a new sketch.
+
+* In ArduinoIDE download 'esp32 by Espressif Systems' under the board manager tab and choose 3.3.5 or later  version.
+
+* Select Tools -> Board -> esp32 -> 'Waveshare ESP32' with the name of your specific ESP32 model (e.g Waveshare ESP32-C6-Zero)
+
+* Press verify and upload the code on to the ESP32
+
+### Operation 
+
+* Place the two measurement electrodes close together over the muscle you want to measure. Position the third electrode separately to serve as a reference.
+
+* While running the program from VSCode go to WiFi setting on your computer and select "ESP32-EMG
+" and enter the standard password "emgsetup2026" (alternatively you can choose your own password in the 'esp32_emg.ino' file on this line of code:)
+
+```bash
+const char *AP_PaSSWORD = "emgsetup2026"
+```
+
+* Press record on the program and follow the instructions given.
+
+* When the set recording time ends, or you stop the recording manually, the program will ask whether you want to save or discard it.
+
+* View your saved recordings under the “Mina analyser” tab.
+
 
 ## Demo mode
 
