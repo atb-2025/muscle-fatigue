@@ -134,25 +134,32 @@ http://127.0.0.1:8000
 
 * In ArduinoIDE download 'esp32 by Espressif Systems' under the board manager tab and choose 3.3.5 or later  version.
 
-* Select Tools -> Board -> esp32 -> 'Waveshare ESP32' with the name of your specific ESP32 model (e.g Waveshare ESP32-C6-Zero)
+* Select Tools -> Board -> esp32 -> 'Waveshare ESP32' with the name of your specific ESP32 model (e.g Waveshare ESP32-C6-Zero).
 
-* Press verify and upload the code on to the ESP32
+* Press verify and upload the code on to the ESP32.
 
 ### Operation 
 
 * Place the two measurement electrodes close together over the muscle you want to measure. Position the third electrode separately to serve as a reference.
 
 * While running the program from VSCode go to WiFi setting on your computer and select "ESP32-EMG
-" and enter the standard password "emgsetup2026" (alternatively you can choose your own password in the 'esp32_emg.ino' file on this line of code:)
+" and enter the default password "emgsetup2026".
+
+## Change the Wi-Fi password (optional)
+
+Open esp32_emg.ino in Arduino IDE and find the following line:
 
 ```bash
-const char *AP_PASSWORD = "emgsetup2026"
+const char *AP_PASSWORD = "emgsetup2026";
 ```
-```bash
-const char *AP_PASSWORD = "MyNewPassword123"
-```
+Replace the default password with your own password containing at least eight characters. For example:
 
-* Press record on the program and follow the instructions given.
+```bash
+const char *AP_PASSWORD = "MyNewPassword123";
+```
+Save the file and upload the updated code to your ESP32. Then reconnect to ESP32-EMG using your new password.
+
+* Press record in the application and follow the instructions given.
 
 * When the set recording time ends, or you stop the recording manually, the program will ask whether you want to save or discard it.
 
