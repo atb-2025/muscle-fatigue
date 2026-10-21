@@ -19,7 +19,7 @@ python3 server.py
 Inga nya Python-paket behövs. Du behöver inte ladda upp Arduino-koden igen
 för denna uppdatering, om kortets Wi-Fi och datasändning redan fungerar.
 
-## Mina analyser – nytt i v3.1
+## Mina analyser 
 
 - Klicka **Öppna** för att visa analysen. Hela den öppnade raden markeras grönt.
 - Din valda trötthetsetikett visas i en liten färgad ruta bredvid analysnamnet.
