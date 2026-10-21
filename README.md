@@ -1,4 +1,4 @@
-# muscle-fatigue
+# Detecting Muscle-Fatigue
 
 Local EMG analysis prototype for measuring relative muscle activity from an ESP32-based setup.
 
@@ -37,10 +37,11 @@ The application lets a user:
 ```text
 muscle-fatigue/
 ├── README.md
-├── kretsschema.png
+├── schematic_sEMG.webp
+├── Final Paper.pdf
+├── sEMGVideo.zip
 ├── FinalPresentation (1) (1).pdf
 ├── Kalkylkod/
-│   ├── README.md
 │   ├── server.py
 │   ├── emg_core.py
 │   ├── amplitude_index.py
@@ -145,7 +146,10 @@ http://127.0.0.1:8000
 " and enter the standard password "emgsetup2026" (alternatively you can choose your own password in the 'esp32_emg.ino' file on this line of code:)
 
 ```bash
-const char *AP_PaSSWORD = "emgsetup2026"
+const char *AP_PASSWORD = "emgsetup2026"
+```
+```bash
+const char *AP_PASSWORD = "MyNewPassword123"
 ```
 
 * Press record on the program and follow the instructions given.
@@ -191,9 +195,5 @@ There is a clear path for extending the project:
 - make the signal analysis more modular and robust
 
 ## Notes
-
-The repository includes supporting technical documentation in `Kalkylkod/README.md`, as well as circuit information in `kretsschema.png`. The presentation file in the repo root likely provides additional project context and final presentation material.
-
----
 
 This project is best understood as a local EMG research prototype for monitoring relative muscle activity and experimenting with automated reference generation in a practical setup.
