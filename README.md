@@ -82,7 +82,17 @@ This implementation is designed as a prototype and engineering tool, not as a cl
 - Python 3
 - NumPy
 - Optional: Node.js for UI tests
-- ESP32 hardware or demo mode
+- ESP32 hardware
+- Circuit board
+- 1x INA128
+- 2x LF365N
+- Resistors: 2.0k, 100k, 390K, 2x 10k, 100 (Ohm)
+- Capacitors: 82n, 910p, 1µ (F)
+- 1x L785S05CV (Regulator)
+- 2x 9V battery
+- 2x Diode
+- 3x EKG or surfare EMG electrodes
+- Wires
 
 ### Install dependencies
 
