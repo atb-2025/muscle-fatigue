@@ -145,6 +145,8 @@ http://127.0.0.1:8000
 * While running the program from VSCode go to WiFi setting on your computer and select "ESP32-EMG
 " and enter the default password "emgsetup2026".
 
+---
+
 ### Change the Wi-Fi password (optional)
 
 - Open esp32_emg.ino in Arduino IDE and find the following line:
@@ -158,6 +160,8 @@ const char *AP_PASSWORD = "emgsetup2026";
 const char *AP_PASSWORD = "MyNewPassword123";
 ```
 - Save the file and upload the updated code to your ESP32. Then reconnect to ESP32-EMG using your new password.
+  
+---
 
 * Press record in the application and follow the instructions given.
 
